@@ -51,7 +51,7 @@ namespace RedHaven.Models
         public int HumanityLoss { get; set; }         // Суммарная потеря человечности от имплантов
 
         // Экипировка
-        public List<Weapon> Weapons { get; set; } = new(); // Оружие, находящееся у персонажа
+        public List<WeaponModel> Weapons { get; set; } = new(); // Оружие, находящееся у персонажа
         public List<Armor> Armor { get; set; } = new();    // Защитная броня
 
         // Специальные способности
