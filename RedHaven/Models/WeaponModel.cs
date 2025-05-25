@@ -1,4 +1,5 @@
-﻿using RedHaven.Enums.WeaponEnums;
+﻿using RedHaven.Enums.SkillEnums;
+using RedHaven.Enums.WeaponEnums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,13 +8,11 @@ using System.Threading.Tasks;
 
 namespace RedHaven.Models
 {
-    internal class WeaponModel
+    public abstract class WeaponModel
     {
         public string Name { get; set; }
-        public WeaponType WeaponType { get; set; }
+        public SkillName WeaponSkill { get; set; }
         public string Damage { get; set; }
-        public int MaxAmmo { get; set; }
-        public int CurrentAmmo { get; set; }
         public int ROF { get; set; }
         public bool FullHand { get; set; }
         public bool Stealthed { get; set; }
