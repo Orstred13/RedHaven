@@ -52,10 +52,10 @@ namespace RedHaven.Models
 
         // Экипировка
         public List<WeaponModel> Weapons { get; set; } = new(); // Оружие, находящееся у персонажа
-        public List<Armor> Armor { get; set; } = new();    // Защитная броня
+        public List<ArmorModel> Armor { get; set; } = new();    // Защитная броня
 
         // Специальные способности
-        public RoleAbility RoleAbility { get; set; }  // Уникальная способность роли (например, Combat Awareness)
+        public RoleAbilityModel RoleAbility { get; set; }  // Уникальная способность роли (например, Combat Awareness)
 
         // Финансы
         public int Eddies { get; set; }               // Текущие деньги персонажа (валюта в игре)
