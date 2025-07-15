@@ -13,5 +13,13 @@ namespace RedHaven.Models
         public int MaxSP { get; set; }                  // Стойкость брони
         public int CurrentSP { get; set; }
         public int Penalty { get; set; }             // Штрафы к REF, DEX, MOVE
+
+        public void GetHit(bool isArmorBreaker = false) {
+            CurrentSP -= 1;
+        }
+
+        public void Repair() {
+            CurrentSP = MaxSP;
+        }
     }
 }
