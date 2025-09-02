@@ -5,7 +5,7 @@ namespace RedHaven.Models
     
     public class CyberWareEmbedModel : CyberWareModel
     {
-        public EmbedCyberWare NameEmbedCyberWare { get; set; } 
+        public CyberWareEmbed NameCyberWareEmbed { get; set; } 
         
     }
 }

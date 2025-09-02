@@ -1,7 +1,7 @@
 ﻿
 namespace RedHaven.Enums.CyberwareEnums
 {
-    public enum BasicCyberWare
+    public enum CyberWareBasic
     {
         StyleImplants,      //Стилевые импланты (7 слотов)
         Neurolink,          //Нейролинк (5 слотов)
@@ -12,4 +12,5 @@ namespace RedHaven.Enums.CyberwareEnums
         CyberHand,          //Кибер руки (4 слота на шт, можно 2шт)
         CyberLeg            //Кибер ноги (3 слота на шт, можно 2шт)
     }
+    
 }

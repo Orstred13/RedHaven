@@ -1,7 +1,7 @@
 
 namespace RedHaven.Enums.CyberwareEnums
 {
-    public enum BorgCyberWare
+    public enum CyberWareBorg
     {
         ArtificialShoulderMount,    // Искусственные плечи с креплением (+2 руки)
         ImplantedLinearFrameSigma,  // Экзоскелет сигма (ТЕЛ 12, треб ТЕЛ 6 и "Исскуственные мышцы и усиление кости")

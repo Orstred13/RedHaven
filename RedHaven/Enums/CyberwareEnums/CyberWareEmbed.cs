@@ -2,7 +2,7 @@
 namespace RedHaven.Enums.CyberwareEnums
 {
     
-    public enum EmbedCyberWare
+    public enum CyberWareEmbed
     {
         #region StyleImplants
         Biomonitor,
