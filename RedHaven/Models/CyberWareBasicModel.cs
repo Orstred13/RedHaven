@@ -7,8 +7,8 @@ namespace RedHaven.Models
     {
         public CyberWareBasic NameCyberWareBasic { get; set; }       // Название 
         
-        public int NumberSlotsEmbed { get; set; }                                   // Добавляемое кол-во слотов для Встраиваемых имплантов
-        public List<CyberWareEmbedModel> CyberWareEmbedList { get; set; }           // Установленные Встраиваемые импланты
+        public int NumberSlotsEmbedded { get; set; }                                   // Добавляемое кол-во слотов для Встраиваемых имплантов
+        public List<CyberWareEmbeddedModel> CyberWareEmbeddedList { get; set; }           // Установленные Встраиваемые импланты
         
         public CyberWarePlace CyberWareInstallationPlace { get; set; }              // Место установки
     }
