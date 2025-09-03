@@ -23,6 +23,7 @@ namespace RedHaven.Models
         public string Motivations { get; set; }       // Мотивации (что движет персонажем)
 
         // Характеристики (STATS)
+        public Dictionary<StatType, int> CharacterStat { get; set; } 
         public int Intelligence { get; set; }         // INT — интеллект
         public int Reflexes { get; set; }             // REF — рефлексы
         public int Dexterity { get; set; }            // DEX — ловкость
@@ -46,9 +47,10 @@ namespace RedHaven.Models
         public int SeriouslyWoundedThreshold { get; set; } // Порог серьезных ранений (обычно половина MaxHP)
 
         // Киберимпланты и человечность
-        public List<Cyberware> Cyberware { get; set; } = new(); // Список киберимплантов
-        public int Humanity { get; set; }             // Уровень человечности (EMP * 10)
-        public int HumanityLoss { get; set; }         // Суммарная потеря человечности от имплантов
+        public List<CyberWareBasicModel> CyberWaresBasic { get; set; } = new(); // Список киберимплантов
+        public List<CyberWareBorgModel> CyberWaresBorg { get; set; } = new(); // Список киберимплантов
+        public int Humanity { get; set; }                                 // Уровень человечности (EMP * 10)
+        public int HumanityLoss { get; set; }                             // Суммарная потеря человечности от имплантов
 
         // Экипировка
         public List<WeaponModel> Weapons { get; set; } = new(); // Оружие, находящееся у персонажа
